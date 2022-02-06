@@ -1,0 +1,7 @@
+MonoLisa*zip
+src/
+otf/
+ttf/
+woff2/
+font-patcher*
+__pycache__/*
