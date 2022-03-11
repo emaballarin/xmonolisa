@@ -37,6 +37,10 @@ newfont.appendSFNTName(
 )
 newfont.appendSFNTName("English (US)", "Trademark", "")
 
+# The grave accent type is somehow not correctly detected;
+# we want it to be an ordinary character
+newfont["grave"].glyphclass="baseglyph"
+
 # Mix our version information in
 newfont.sfntRevision = None  # Auto-set (refreshed) by fontforge
 newfont.appendSFNTName("English (US)", "Version", args.version)
