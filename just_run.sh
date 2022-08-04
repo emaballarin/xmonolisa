@@ -6,6 +6,8 @@ NERDFONTVERS=v2.1.0
 
 # Prepare original fonts from official release
 unzip MonoLisa*.zip
+rm -f ./*.md
+mv ./ttf/* ./
 
 # Get and prepare NerdFonts Patcher
 curl -L https://raw.githubusercontent.com/ryanoasis/nerd-fonts/${NERDFONTVERS}/font-patcher --output font-patcher
