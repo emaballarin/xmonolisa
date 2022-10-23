@@ -38,14 +38,16 @@ curl -L https://github.com/ryanoasis/nerd-fonts/blob/${NERDFONTVERS}/src/unpatch
 fontforge -lang=ff -script extract-extra-glyphs
 
 # Build patched fonts
-./do_generate 01 -c -c  MonoLisa-Bold.ttf           XMonoLisa-Bold.ttf          "XMonoLisa"
-./do_generate 02 -c -c  MonoLisa-BoldItalic.ttf     XMonoLisa-BoldItalic.ttf    "XMonoLisa"
-./do_generate 03 -c -c  MonoLisa-Light.ttf          XMonoLisaLight.ttf          "XMonoLisa"
-./do_generate 04 -c -c  MonoLisa-LightItalic.ttf    XMonoLisaLight-Italic.ttf   "XMonoLisa"
-./do_generate 05 -c -c  MonoLisa-Medium.ttf         XMonoLisaMedium.ttf         "XMonoLisa"
-./do_generate 06 -c -c  MonoLisa-MediumItalic.ttf   XMonoLisaMedium-Italic.ttf  "XMonoLisa"
-./do_generate 07 -c -c  MonoLisa-Regular.ttf        XMonoLisa.ttf               "XMonoLisa"
-./do_generate 08 -c -c  MonoLisa-RegularItalic.ttf  XMonoLisa-Italic.ttf        "XMonoLisa"
+./do_generate 01 -c -c  MonoLisa-Bold.ttf            XMonoLisa-Bold.ttf            "XMonoLisa"
+./do_generate 02 -c -c  MonoLisa-BoldItalic.ttf      XMonoLisa-BoldItalic.ttf      "XMonoLisa"
+./do_generate 03 -c -c  MonoLisa-Light.ttf           XMonoLisaLight.ttf            "XMonoLisa"
+./do_generate 04 -c -c  MonoLisa-LightItalic.ttf     XMonoLisaLight-Italic.ttf     "XMonoLisa"
+./do_generate 05 -c -c  MonoLisa-Medium.ttf          XMonoLisaMedium.ttf           "XMonoLisa"
+./do_generate 06 -c -c  MonoLisa-MediumItalic.ttf    XMonoLisaMedium-Italic.ttf    "XMonoLisa"
+./do_generate 07 -c -c  MonoLisa-Regular.ttf         XMonoLisa.ttf                 "XMonoLisa"
+./do_generate 08 -c -c  MonoLisa-RegularItalic.ttf   XMonoLisa-Italic.ttf          "XMonoLisa"
+./do_generate 09 -c -c  MonoLisa-SemiBold.ttf        XMonoLisaSemiBold.ttf         "XMonoLisa"
+./do_generate 10 -c -c  MonoLisa-SemiBoldItalic.ttf  XMonoLisaSemiBold-Italic.ttf  "XMonoLisa"
 
 # Rename (some) patched fonts for compliance
 mv XMonoLisaLight.ttf XMonoLisa-Light.ttf
@@ -54,6 +56,8 @@ mv XMonoLisaMedium.ttf XMonoLisa-Medium.ttf
 mv XMonoLisaMedium-Italic.ttf XMonoLisa-MediumItalic.ttf
 mv XMonoLisa.ttf XMonoLisa-Regular.ttf
 mv XMonoLisa-Italic.ttf XMonoLisa-RegularItalic.ttf
+mv XMonoLisaSemiBold.ttf XMonoLisa-SemiBold.ttf
+mv XMonoLisaSemiBoldItalic.ttf XMonoLisa-SemiBoldItalic.ttf
 
 # Prepare release
 mkdir xmonolisa
