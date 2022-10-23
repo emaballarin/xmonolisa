@@ -57,7 +57,7 @@ mv XMonoLisaMedium-Italic.ttf XMonoLisa-MediumItalic.ttf
 mv XMonoLisa.ttf XMonoLisa-Regular.ttf
 mv XMonoLisa-Italic.ttf XMonoLisa-RegularItalic.ttf
 mv XMonoLisaSemiBold.ttf XMonoLisa-SemiBold.ttf
-mv XMonoLisaSemiBoldItalic.ttf XMonoLisa-SemiBoldItalic.ttf
+mv XMonoLisaSemiBold-Italic.ttf XMonoLisa-SemiBoldItalic.ttf
 
 # Prepare release
 mkdir xmonolisa
