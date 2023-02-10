@@ -13,7 +13,7 @@
 # 5: Output font file name
 # 6: Font family name
 
-OURVERSION="2.002"
+OURVERSION="2.003"
 
 set -e
 
